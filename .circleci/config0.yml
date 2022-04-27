@@ -7,9 +7,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.1.0
+      - image: cimg/ruby:2.7.4
     steps:
-      - run: echo "hello world"
+      - checkout
+      - run: bundle install
+      - run: bundle exec rspec ../spec/test1_spec.rb
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
