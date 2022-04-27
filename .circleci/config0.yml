@@ -11,7 +11,7 @@ jobs:
     steps:
       - checkout
       - run: bundle install
-      - run: bundle exec rspec ../spec/test1_spec.rb
+      - run: bundle exec rspec ./spec/test1_spec.rb
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
