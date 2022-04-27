@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 
 current_branch = `git rev-parse --abbrev-ref HEAD`
